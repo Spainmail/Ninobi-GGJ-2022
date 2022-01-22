@@ -1290,7 +1290,7 @@ MonoBehaviour:
   disableJump: 0
   movementSpeed: 12
   inAirControl: 1
-  jumpForce: 14
+  jumpForce: 15
   isJumping: 0
   movementInput: 0
   heavenGrounded: 0

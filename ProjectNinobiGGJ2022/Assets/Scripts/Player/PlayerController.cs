@@ -84,34 +84,34 @@ public class PlayerController : MonoBehaviour
             movementInput = Input.GetAxisRaw("Horizontal"); //Get player input
         }
 
-        if (Physics2D.BoxCast(characterHeaven.transform.position, new Vector2(1f, 1.9f), 0f, characterHeaven.transform.right, 0.05f, groundLayers)
+        if (Physics2D.BoxCast(characterHeaven.transform.position, new Vector2(1f, 1.95f), 0f, characterHeaven.transform.right, 0.05f, groundLayers)
             ||
-            Physics2D.BoxCast(characterHell.transform.position, new Vector2(1f, 1.9f), 0f, characterHell.transform.right, 0.05f, groundLayers))
+            Physics2D.BoxCast(characterHell.transform.position, new Vector2(1f, 1.95f), 0f, characterHell.transform.right, 0.05f, groundLayers))
         {
             //Debug.Log("Hit collider to the right");
             if (movementInput > 0)
             {
-                movementInput = 0;
+                movementInput = -0.05f;
             }
         }
-        else if (Physics2D.BoxCast(characterHeaven.transform.position, new Vector2(1f, 1.9f), 0f, -characterHeaven.transform.right, 0.05f, groundLayers) 
+        else if (Physics2D.BoxCast(characterHeaven.transform.position, new Vector2(1f, 1.95f), 0f, -characterHeaven.transform.right, 0.05f, groundLayers) 
                 || 
-                Physics2D.BoxCast(characterHell.transform.position, new Vector2(1f, 1.9f), 0f, -characterHell.transform.right, 0.05f, groundLayers))
+                Physics2D.BoxCast(characterHell.transform.position, new Vector2(1f, 1.95f), 0f, -characterHell.transform.right, 0.05f, groundLayers))
         {
             //Debug.Log("Hit collider to the left");
             if (movementInput < 0)
             {
-                movementInput = 0;
+                movementInput = 0.05f;
             }
         }
-        else
-        {
+        //else
+        //{
             if (!disableMovement) //Translate horizontal input into movement.
             {
                 characterHeaven.transform.Translate(new Vector3(movementInput, 0, 0) * movementSpeed * Time.deltaTime);
                 characterHell.transform.Translate(new Vector3(movementInput, 0, 0) * movementSpeed * Time.deltaTime);
             }
-        }
+        //}
 
         if (Input.GetButtonDown("Jump") && !disableJump && heavenGrounded && hellGrounded) //If player is able to and wants to jump.
         {
@@ -119,10 +119,8 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
 
-
         characterHeaven.transform.Translate(new Vector3(0, velocity, 0) * Time.deltaTime);
         characterHell.transform.Translate(new Vector3(0, velocity, 0) * Time.deltaTime);
-
     }
 
     private void FixedUpdate()
