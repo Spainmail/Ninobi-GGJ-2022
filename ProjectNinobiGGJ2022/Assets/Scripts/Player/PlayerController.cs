@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     public GameObject characterHell;
     public Rigidbody2D hellRB;
 
+    public StepUp heavenFeet;
+    public StepUp hellFeet;
+
     [Header("Enablers/Disablers")] //For easily disabling player actions for level start/end events, UI events, etc.
     [HideInInspector] public bool disableMovement;
     [HideInInspector] public bool disableJump;
@@ -84,24 +87,24 @@ public class PlayerController : MonoBehaviour
             movementInput = Input.GetAxisRaw("Horizontal"); //Get player input
         }
 
-        if (Physics2D.BoxCast(characterHeaven.transform.position, new Vector2(1f, 1.95f), 0f, characterHeaven.transform.right, 0.05f, groundLayers)
+        if (Physics2D.BoxCast(characterHeaven.transform.position, new Vector2(1.05f, 1.7f), 0f, characterHeaven.transform.right, 0.03f, groundLayers)
             ||
-            Physics2D.BoxCast(characterHell.transform.position, new Vector2(1f, 1.95f), 0f, characterHell.transform.right, 0.05f, groundLayers))
+            Physics2D.BoxCast(characterHell.transform.position, new Vector2(1.05f, 1.7f), 0f, characterHell.transform.right, 0.03f, groundLayers))
         {
             //Debug.Log("Hit collider to the right");
             if (movementInput > 0)
             {
-                movementInput = -0.05f;
+                movementInput = -0.025f;
             }
         }
-        else if (Physics2D.BoxCast(characterHeaven.transform.position, new Vector2(1f, 1.95f), 0f, -characterHeaven.transform.right, 0.05f, groundLayers) 
+        if (Physics2D.BoxCast(characterHeaven.transform.position, new Vector2(1.05f, 1.7f), 0f, -characterHeaven.transform.right, 0.03f, groundLayers) 
                 || 
-                Physics2D.BoxCast(characterHell.transform.position, new Vector2(1f, 1.95f), 0f, -characterHell.transform.right, 0.05f, groundLayers))
+                Physics2D.BoxCast(characterHell.transform.position, new Vector2(1.05f, 1.7f), 0f, -characterHell.transform.right, 0.03f, groundLayers))
         {
             //Debug.Log("Hit collider to the left");
             if (movementInput < 0)
             {
-                movementInput = 0.05f;
+                movementInput = 0.025f;
             }
         }
         //else
@@ -117,6 +120,11 @@ public class PlayerController : MonoBehaviour
         {
             isJumping = true;
             Jump();
+        }
+
+        if (heavenFeet.CheckFeetOverlap() || hellFeet.CheckFeetOverlap()) //Pish player upwards if either character is currently intersecting with terrain object.
+        {
+            velocity += 1f;
         }
 
         characterHeaven.transform.Translate(new Vector3(0, velocity, 0) * Time.deltaTime);
