@@ -121,6 +121,11 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
             Jump();
         }
+        if (Input.GetButtonUp("Jump") && isJumping && !heavenGrounded && !hellGrounded)
+        {
+            velocity = velocity * 0.5f;
+            isJumping = false;
+        }
 
         if (heavenFeet.CheckFeetOverlap() || hellFeet.CheckFeetOverlap()) //Pish player upwards if either character is currently intersecting with terrain object.
         {
