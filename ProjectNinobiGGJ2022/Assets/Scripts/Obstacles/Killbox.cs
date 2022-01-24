@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Spike : MonoBehaviour
+public class Killbox : MonoBehaviour
 {
 
     private GameObject[] players;
