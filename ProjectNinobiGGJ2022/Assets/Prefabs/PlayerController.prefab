@@ -1270,7 +1270,7 @@ GameObject:
   - component: {fileID: 8837174994729366155}
   m_Layer: 7
   m_Name: Player(Hell)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1491,7 +1491,7 @@ GameObject:
   - component: {fileID: 8837174995776897921}
   m_Layer: 7
   m_Name: Player(Heaven)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1701,7 +1701,7 @@ GameObject:
   - component: {fileID: 8837174996021605371}
   m_Layer: 0
   m_Name: PlayerController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1750,6 +1750,7 @@ MonoBehaviour:
   inAirControl: 1
   jumpForce: 15
   isJumping: 0
+  coyoteTimer: 0.2
   movementInput: 0
   heavenGrounded: 0
   hellGrounded: 0
@@ -1757,8 +1758,6 @@ MonoBehaviour:
   groundLayers:
     serializedVersion: 2
     m_Bits: 64
-  coyoteTimer: 0.2
-  coyoteTimerCurrent: 0
   gravity: -9.81
   gravityScale: 2
   velocity: 0
