@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
 
     public StepUp heavenFeet;
     public StepUp hellFeet;
+    public GameObject heavenHead;
+    public GameObject hellHead;
 
     [Header("Enablers/Disablers")] //For easily disabling player actions for level start/end events, UI events, etc.
     [HideInInspector] public bool disableMovement;
@@ -23,6 +25,7 @@ public class PlayerController : MonoBehaviour
     public float inAirControl;
     public float jumpForce;
     public bool isJumping;
+    public float coyoteTimer;
 
     [Header("Movement")]
     public float movementInput;
@@ -34,6 +37,7 @@ public class PlayerController : MonoBehaviour
     public float gravity;
     public float gravityScale;
     public float velocity;
+    private float coyoteTimerCurrent;
 
     private void Awake()
     {
@@ -52,11 +56,16 @@ public class PlayerController : MonoBehaviour
             {
                 isJumping = false;
             }
+            coyoteTimerCurrent = coyoteTimer;
         }
         else if (!Physics2D.Raycast(characterHeaven.transform.position, -Vector2.up, groundRay, groundLayers) && !Physics2D.Raycast(characterHell.transform.position, -Vector2.up, groundRay, groundLayers))
         {
             heavenGrounded = false;
             hellGrounded = false;
+            if (!isJumping)
+            {
+                coyoteTimerCurrent -= Time.deltaTime;
+            }
         }
 
 
@@ -70,11 +79,21 @@ public class PlayerController : MonoBehaviour
         }
 
         //Above check
-        if (Physics2D.Raycast(characterHeaven.transform.position, Vector2.up, groundRay, groundLayers) || Physics2D.Raycast(characterHell.transform.position, Vector2.up, groundRay, groundLayers))
+        //if (Physics2D.Raycast(characterHeaven.transform.position, Vector2.up, groundRay, groundLayers) || Physics2D.Raycast(characterHell.transform.position, Vector2.up, groundRay, groundLayers))
+        //{
+        //    Debug.Log("Bonked head");
+        //    isJumping = false;
+        //    velocity = -0.2f;
+        //}
+        if (Physics2D.CircleCast(heavenHead.transform.position, 0.5f, Vector2.up, 0.05f, groundLayers) || Physics2D.CircleCast(hellHead.transform.position, 0.5f, Vector2.up, 0.05f, groundLayers))
         {
             Debug.Log("Bonked head");
             isJumping = false;
-            velocity = -0.2f;
+            velocity = -0.3f;
+        }
+        else if (heavenFeet.CheckFeetOverlap() || hellFeet.CheckFeetOverlap()) //Pish player upwards if either character is currently intersecting with terrain object.
+        {
+            velocity += 0.35f;
         }
         
 
@@ -87,9 +106,9 @@ public class PlayerController : MonoBehaviour
             movementInput = Input.GetAxisRaw("Horizontal"); //Get player input
         }
 
-        if (Physics2D.BoxCast(characterHeaven.transform.position, new Vector2(1.05f, 1.7f), 0f, characterHeaven.transform.right, 0.03f, groundLayers)
+        if (Physics2D.BoxCast(characterHeaven.transform.position, new Vector2(1.05f, 1.7f), 0f, characterHeaven.transform.right, 0.05f, groundLayers)
             ||
-            Physics2D.BoxCast(characterHell.transform.position, new Vector2(1.05f, 1.7f), 0f, characterHell.transform.right, 0.03f, groundLayers))
+            Physics2D.BoxCast(characterHell.transform.position, new Vector2(1.05f, 1.7f), 0f, characterHell.transform.right, 0.05f, groundLayers))
         {
             //Debug.Log("Hit collider to the right");
             if (movementInput > 0)
@@ -97,9 +116,9 @@ public class PlayerController : MonoBehaviour
                 movementInput = -0.025f;
             }
         }
-        if (Physics2D.BoxCast(characterHeaven.transform.position, new Vector2(1.05f, 1.7f), 0f, -characterHeaven.transform.right, 0.03f, groundLayers) 
+        if (Physics2D.BoxCast(characterHeaven.transform.position, new Vector2(1.05f, 1.7f), 0f, -characterHeaven.transform.right, 0.05f, groundLayers) 
                 || 
-                Physics2D.BoxCast(characterHell.transform.position, new Vector2(1.05f, 1.7f), 0f, -characterHell.transform.right, 0.03f, groundLayers))
+                Physics2D.BoxCast(characterHell.transform.position, new Vector2(1.05f, 1.7f), 0f, -characterHell.transform.right, 0.05f, groundLayers))
         {
             //Debug.Log("Hit collider to the left");
             if (movementInput < 0)
@@ -116,8 +135,10 @@ public class PlayerController : MonoBehaviour
             }
         //}
 
-        if (Input.GetButtonDown("Jump") && !disableJump && heavenGrounded && hellGrounded) //If player is able to and wants to jump.
+
+        if (Input.GetButtonDown("Jump") && !disableJump && isJumping == false && coyoteTimerCurrent > 0f) //If player is able to and wants to jump.
         {
+            coyoteTimerCurrent = 0f;
             isJumping = true;
             Jump();
         }
@@ -127,10 +148,6 @@ public class PlayerController : MonoBehaviour
             isJumping = false;
         }
 
-        if (heavenFeet.CheckFeetOverlap() || hellFeet.CheckFeetOverlap()) //Pish player upwards if either character is currently intersecting with terrain object.
-        {
-            velocity += 1f;
-        }
 
         characterHeaven.transform.Translate(new Vector3(0, velocity, 0) * Time.deltaTime);
         characterHell.transform.Translate(new Vector3(0, velocity, 0) * Time.deltaTime);
