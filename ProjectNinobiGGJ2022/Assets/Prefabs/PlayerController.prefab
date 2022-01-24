@@ -1268,6 +1268,7 @@ GameObject:
   - component: {fileID: 8837174994729366153}
   - component: {fileID: 8837174994729366148}
   - component: {fileID: 8837174994729366155}
+  - component: {fileID: 575461071}
   m_Layer: 7
   m_Name: Player(Hell)
   m_TagString: Player
@@ -1379,6 +1380,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &575461071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8837174994729366152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a944208da71304f96c3cadb6845a6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 1
+  boxMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &8837174994766472896
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,6 +1506,7 @@ GameObject:
   - component: {fileID: 8837174995776897927}
   - component: {fileID: 8837174995776897922}
   - component: {fileID: 8837174995776897921}
+  - component: {fileID: 1390780202}
   m_Layer: 7
   m_Name: Player(Heaven)
   m_TagString: Player
@@ -1600,6 +1618,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1390780202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8837174995776897926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a944208da71304f96c3cadb6845a6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 1
+  boxMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &8837174995859937512
 GameObject:
   m_ObjectHideFlags: 0
