@@ -34,14 +34,12 @@ public class PlayerPush : MonoBehaviour
             box = hitRight.collider.gameObject;
             boxRigid = box.GetComponent<Rigidbody2D>();
             boxRigid.velocity = new Vector2(+4, 0);
-            Debug.Log("Moving Right");
         }
         if (hitLeft.collider != null && hitLeft.collider.CompareTag("Pushable"))
         {
             box = hitLeft.collider.gameObject;
             boxRigid = box.GetComponent<Rigidbody2D>();
             boxRigid.velocity = new Vector2(-4, 0);
-            Debug.Log("Moving left");
         }
     }
 }
