@@ -1,0 +1,700 @@
+fileFormatVersion: 2
+guid: 9828f68d6a240904c82527e88df2f494
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -132930376636528448
+    second: hell_pallet_0
+  - first:
+      213: 5485086322268874944
+    second: hell_pallet_1
+  - first:
+      213: -1366017952719934332
+    second: hell_pallet_2
+  - first:
+      213: 7180274794606568950
+    second: hell_pallet_3
+  - first:
+      213: 8919153546147775695
+    second: hell_pallet_4
+  - first:
+      213: -7372547574877867525
+    second: hell_pallet_5
+  - first:
+      213: -6913298379596207597
+    second: hell_pallet_6
+  - first:
+      213: -934945547042943242
+    second: hell_pallet_7
+  - first:
+      213: -5700549582654914215
+    second: hell_pallet_8
+  - first:
+      213: 5570718029830123506
+    second: hell_pallet_9
+  - first:
+      213: -3242975113660179829
+    second: hell_pallet_10
+  - first:
+      213: -1188176589628002867
+    second: hell_pallet_11
+  - first:
+      213: 2024356020595826437
+    second: hell_pallet_12
+  - first:
+      213: -140727621156829975
+    second: hell_pallet_13
+  - first:
+      213: -7608058531987303749
+    second: hell_pallet_14
+  - first:
+      213: -2634119932477794378
+    second: hell_pallet_15
+  - first:
+      213: -2241158680462985774
+    second: hell_pallet_16
+  - first:
+      213: -6008219989721355157
+    second: hell_pallet_17
+  - first:
+      213: 6189499062521669321
+    second: hell_pallet_18
+  - first:
+      213: -900535094189653958
+    second: hell_pallet_19
+  - first:
+      213: 1561349701686583699
+    second: hell_pallet_20
+  - first:
+      213: 7041352466472929009
+    second: hell_pallet_21
+  - first:
+      213: -3140927016891307563
+    second: hell_pallet_22
+  - first:
+      213: -6058316669193002186
+    second: hell_pallet_23
+  - first:
+      213: 779407292858798699
+    second: hell_pallet_24
+  - first:
+      213: -6534297586846959992
+    second: hell_pallet_25
+  - first:
+      213: -8780454804342866076
+    second: hell_pallet_26
+  - first:
+      213: 2672008494011435923
+    second: hell_pallet_27
+  - first:
+      213: 5769656000626528720
+    second: hell_pallet_28
+  - first:
+      213: -6325056134949049865
+    second: hell_pallet_29
+  - first:
+      213: 8354105378866106341
+    second: hell_pallet_30
+  - first:
+      213: -4247951281538232493
+    second: hell_pallet_31
+  - first:
+      213: 7866323961420959255
+    second: hell_pallet_32
+  - first:
+      213: 4429283015568884523
+    second: hell_pallet_33
+  - first:
+      213: 7816068702128089230
+    second: hell_pallet_34
+  - first:
+      213: -5746469777999394647
+    second: hell_pallet_35
+  - first:
+      213: 6509192268622683392
+    second: hell_pallet_36
+  - first:
+      213: -910174494051415583
+    second: hell_pallet_37
+  - first:
+      213: -5657096646900344933
+    second: hell_pallet_38
+  - first:
+      213: 4465215947450095127
+    second: hell_pallet_39
+  - first:
+      213: -1031664182230613292
+    second: hell_pallet_40
+  - first:
+      213: -3798567648244841117
+    second: hell_pallet_41
+  - first:
+      213: 791621326409455615
+    second: hell_pallet_42
+  - first:
+      213: -1387598052816008857
+    second: hell_pallet_43
+  - first:
+      213: 5361926802293036693
+    second: hell_pallet_44
+  - first:
+      213: -3204002732234738664
+    second: hell_pallet_45
+  - first:
+      213: 5369690008297505089
+    second: hell_pallet_46
+  - first:
+      213: -7439729407493616621
+    second: hell_pallet_47
+  - first:
+      213: 6368999667417621502
+    second: hell_pallet_48
+  - first:
+      213: 5611193720252696042
+    second: hell_pallet_49
+  - first:
+      213: -8412238123022088028
+    second: hell_pallet_50
+  - first:
+      213: 4553719491601637842
+    second: hell_pallet_51
+  - first:
+      213: 2164989900575436653
+    second: hell_pallet_52
+  - first:
+      213: 4967773412526450184
+    second: hell_pallet_53
+  - first:
+      213: -6145792770843431364
+    second: hell_pallet_54
+  - first:
+      213: 2064579717912205184
+    second: hell_pallet_55
+  - first:
+      213: -5549404720475293760
+    second: hell_pallet_56
+  - first:
+      213: -5890042066085022183
+    second: hell_pallet_57
+  - first:
+      213: -7697890760244143740
+    second: hell_pallet_58
+  - first:
+      213: -4978189923836669289
+    second: hell_pallet_59
+  - first:
+      213: 6945237824007480145
+    second: hell_pallet_60
+  - first:
+      213: -4111109382983870278
+    second: hell_pallet_61
+  - first:
+      213: 620461257926313057
+    second: hell_pallet_62
+  - first:
+      213: -2528088961798531842
+    second: hell_pallet_63
+  - first:
+      213: -6879330068002100439
+    second: hell_pallet_64
+  - first:
+      213: -5887424293744920821
+    second: hell_pallet_65
+  - first:
+      213: 6452737040024533091
+    second: hell_pallet_66
+  - first:
+      213: -7734642482773802146
+    second: hell_pallet_67
+  - first:
+      213: 4425401507057493866
+    second: hell_pallet_68
+  - first:
+      213: 6245347520311236301
+    second: hell_pallet_69
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hell_pallet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1640
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -300, y: 191.052}
+        - {x: -300, y: -300}
+        - {x: 300, y: -299.61377}
+        - {x: 300, y: 191.08325}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c888b8d68cb72ef0800000000000000
+      internalID: -132930376636528448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hell_pallet_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1640
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8a039e2f0fe1c40800000000000000
+      internalID: 5485086322268874944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hell_pallet_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1640
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -300, y: 190.32764}
+        - {x: -300, y: -299.61377}
+        - {x: 300, y: -299.61377}
+        - {x: 300, y: 190.3794}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c6253d8edea0de0800000000000000
+      internalID: -1366017952719934332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hell_pallet_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1640
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5273a02e575a360800000000000000
+      internalID: 7180274794606568950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hell_pallet_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1640
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 300, y: 193.53467}
+        - {x: -300, y: 191.14722}
+        - {x: -299.94138, y: -299.61377}
+        - {x: 173.46704, y: -300}
+        - {x: 300, y: 119.76218}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4cd4ff4e237cb70800000000000000
+      internalID: 8919153546147775695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hell_pallet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1040
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1bcb5ca037fa990800000000000000
+      internalID: -7372547574877867525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hell_pallet_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1040
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a62e180c70f00a0800000000000000
+      internalID: -6913298379596207597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hell_pallet_7
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1040
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe0c208af76603f0800000000000000
+      internalID: -934945547042943242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hell_pallet_8
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1040
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -300, y: -300}
+        - {x: -300, y: 300}
+        - {x: 300, y: 300}
+        - {x: 300, y: -300}
+      physicsShape:
+      - - {x: -300, y: -300}
+        - {x: -300, y: 300}
+        - {x: 300, y: 300}
+        - {x: 300, y: -300}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9514a5d7b5493e0b0800000000000000
+      internalID: -5700549582654914215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hell_pallet_9
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1040
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff63ef788a2f4d40800000000000000
+      internalID: 5570718029830123506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hell_pallet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -140.61328, y: 300}
+        - {x: -209.92664, y: -27.548157}
+        - {x: -155.58984, y: -299.73254}
+        - {x: 300, y: -299.73254}
+        - {x: 300, y: 300}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a5adee053aef2d0800000000000000
+      internalID: -3242975113660179829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hell_pallet_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 440
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcda9ccdfafb28fe0800000000000000
+      internalID: -1188176589628002867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hell_pallet_12
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 440
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f99824315f71c10800000000000000
+      internalID: 2024356020595826437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hell_pallet_13
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 440
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e48cd269f80c0ef0800000000000000
+      internalID: -140727621156829975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hell_pallet_14
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 440
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -299.94138, y: 300}
+        - {x: -299.94138, y: -299.73254}
+        - {x: 159.33987, y: -299.73254}
+        - {x: 191.97241, y: -14.382385}
+        - {x: 141.03519, y: 300}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2548a031fba6690800000000000000
+      internalID: -7608058531987303749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
