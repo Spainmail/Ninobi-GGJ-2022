@@ -157,7 +157,7 @@ public class PlayerController : MonoBehaviour
     {
     }
 
-    private void Jump()
+    public void Jump()
     {
         velocity = jumpForce;
     }
