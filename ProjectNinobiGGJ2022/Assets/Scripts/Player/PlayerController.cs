@@ -42,6 +42,11 @@ public class PlayerController : MonoBehaviour
     public float velocity;
     private float coyoteTimerCurrent;
 
+    [Header("Anim")]
+    public Animator AnimatorHeaven;
+    public Animator AnimatorHell;
+
+
     private void Awake()
     {
         heavenRB = characterHeaven.GetComponent<Rigidbody2D>();
@@ -107,6 +112,28 @@ public class PlayerController : MonoBehaviour
             characterHeaven.transform.Translate(new Vector3(movementInput, 0, 0) * movementSpeed * Time.deltaTime);
             characterHell.transform.Translate(new Vector3(movementInput, 0, 0) * movementSpeed * Time.deltaTime);
         }
+        if(movementInput >= 0)
+        {
+            characterHeaven.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            characterHell.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+        }
+        else
+        {
+            characterHeaven.gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            characterHell.gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        }
+
+        if(movementInput > 0 || movementInput < 0)
+        {
+            AnimatorHeaven.SetBool("IsWalking", true);
+            AnimatorHell.SetBool("IsWalking", true);
+        }
+        else
+        {
+            AnimatorHeaven.SetBool("IsWalking", false);
+            AnimatorHell.SetBool("IsWalking", false);
+        }
+
     }
 
     private bool HorizontalCollisionCheck(bool right)
