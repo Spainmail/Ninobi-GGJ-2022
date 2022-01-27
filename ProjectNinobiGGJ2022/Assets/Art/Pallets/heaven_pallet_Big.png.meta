@@ -1,52 +1,52 @@
 fileFormatVersion: 2
-guid: d3512d19f5acb7c49a816cc8faa78ecc
+guid: 35de5d92eab9e294d82aa23de83dc044
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1645255878606065455
-    second: heaven_pallet resized_0
+      213: 190673289500954950
+    second: heaven_pallet_Big_0
   - first:
-      213: 5651969326336435771
-    second: heaven_pallet resized_1
+      213: -5567487475758839194
+    second: heaven_pallet_Big_1
   - first:
-      213: -6391436530653938497
-    second: heaven_pallet resized_2
+      213: -5627738598009447164
+    second: heaven_pallet_Big_2
   - first:
-      213: -548185663916399622
-    second: heaven_pallet resized_3
+      213: -8139678525995063907
+    second: heaven_pallet_Big_3
   - first:
-      213: 7708455696330723635
-    second: heaven_pallet resized_4
+      213: -8764822134209839961
+    second: heaven_pallet_Big_4
   - first:
-      213: -5291994019676948357
-    second: heaven_pallet resized_5
+      213: 25151317253455116
+    second: heaven_pallet_Big_5
   - first:
-      213: 3373778257149626009
-    second: heaven_pallet resized_6
+      213: -4787414037233123502
+    second: heaven_pallet_Big_6
   - first:
-      213: -2997983458154798218
-    second: heaven_pallet resized_7
+      213: 7001114044905335687
+    second: heaven_pallet_Big_7
   - first:
-      213: -1963301226032411591
-    second: heaven_pallet resized_8
+      213: -4118863963168872554
+    second: heaven_pallet_Big_8
   - first:
-      213: 6319884087028329767
-    second: heaven_pallet resized_9
+      213: -8914667921634132022
+    second: heaven_pallet_Big_9
   - first:
-      213: -4816170457597695498
-    second: heaven_pallet resized_10
+      213: -5977319542759185239
+    second: heaven_pallet_Big_10
   - first:
-      213: 564077287988489292
-    second: heaven_pallet resized_11
+      213: -8090954466021770150
+    second: heaven_pallet_Big_11
   - first:
-      213: 5769709884298486845
-    second: heaven_pallet resized_12
+      213: 8497164157899588909
+    second: heaven_pallet_Big_12
   - first:
-      213: -2484531061133616282
-    second: heaven_pallet resized_13
+      213: -4936425714641319971
+    second: heaven_pallet_Big_13
   - first:
-      213: -5470981819563435161
-    second: heaven_pallet resized_14
+      213: -1010588864385834887
+    second: heaven_pallet_Big_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -91,7 +91,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -172,7 +172,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: heaven_pallet resized_0
+      name: heaven_pallet_Big_0
       rect:
         serializedVersion: 2
         x: 0
@@ -184,20 +184,20 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -300, y: 118}
-        - {x: -122, y: -300}
+      - - {x: -300, y: 107}
+        - {x: -122.30859, y: -299.61377}
         - {x: 300, y: -299.61377}
-        - {x: 300, y: 179}
+        - {x: 300, y: 183}
       tessellationDetail: 0
       bones: []
-      spriteID: 1d0ff0fce70ea29e0800000000000000
-      internalID: -1645255878606065455
+      spriteID: 6411cd8b85865a200800000000000000
+      internalID: 190673289500954950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: heaven_pallet resized_1
+      name: heaven_pallet_Big_1
       rect:
         serializedVersion: 2
         x: 600
@@ -211,14 +211,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b36efa92824df6e40800000000000000
-      internalID: 5651969326336435771
+      spriteID: 66a45fb73af4cb2b0800000000000000
+      internalID: -5567487475758839194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: heaven_pallet resized_2
+      name: heaven_pallet_Big_2
       rect:
         serializedVersion: 2
         x: 1200
@@ -230,20 +230,20 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -300, y: 176}
+      - - {x: -300, y: 173}
         - {x: -300, y: -299.61377}
         - {x: 300, y: -299.61377}
-        - {x: 300, y: 187}
+        - {x: 300, y: 176}
       tessellationDetail: 0
       bones: []
-      spriteID: fbcbae1b65e0d47a0800000000000000
-      internalID: -6391436530653938497
+      spriteID: 40d54e8ef8146e1b0800000000000000
+      internalID: -5627738598009447164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: heaven_pallet resized_3
+      name: heaven_pallet_Big_3
       rect:
         serializedVersion: 2
         x: 1800
@@ -257,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af32d470b047468f0800000000000000
-      internalID: -548185663916399622
+      spriteID: d956038a18d0a0f80800000000000000
+      internalID: -8139678525995063907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: heaven_pallet resized_4
+      name: heaven_pallet_Big_4
       rect:
         serializedVersion: 2
         x: 2400
@@ -276,20 +276,20 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 300, y: 120}
-        - {x: -300, y: 169}
+      - - {x: 300, y: 107}
+        - {x: -300, y: 171}
         - {x: -299.94138, y: -299.61377}
-        - {x: 119, y: -300}
+        - {x: 71, y: -300}
       tessellationDetail: 0
       bones: []
-      spriteID: 33111aa5d9fe9fa60800000000000000
-      internalID: 7708455696330723635
+      spriteID: 7acf0faf4b81d5680800000000000000
+      internalID: -8764822134209839961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: heaven_pallet resized_5
+      name: heaven_pallet_Big_5
       rect:
         serializedVersion: 2
         x: 0
@@ -303,14 +303,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b78f9af2a7f0f86b0800000000000000
-      internalID: -5291994019676948357
+      spriteID: c0d76826dfa595000800000000000000
+      internalID: 25151317253455116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: heaven_pallet resized_6
+      name: heaven_pallet_Big_6
       rect:
         serializedVersion: 2
         x: 600
@@ -324,14 +324,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9960758237112de20800000000000000
-      internalID: 3373778257149626009
+      spriteID: 25f30064c40bf8db0800000000000000
+      internalID: -4787414037233123502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: heaven_pallet resized_7
+      name: heaven_pallet_Big_7
       rect:
         serializedVersion: 2
         x: 1200
@@ -345,14 +345,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 673af26cde50566d0800000000000000
-      internalID: -2997983458154798218
+      spriteID: 78ba49e5124f82160800000000000000
+      internalID: 7001114044905335687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: heaven_pallet resized_8
+      name: heaven_pallet_Big_8
       rect:
         serializedVersion: 2
         x: 1800
@@ -366,14 +366,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93ccf3bdfe3f0c4e0800000000000000
-      internalID: -1963301226032411591
+      spriteID: 69769255c0bd6d6c0800000000000000
+      internalID: -4118863963168872554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: heaven_pallet resized_9
+      name: heaven_pallet_Big_9
       rect:
         serializedVersion: 2
         x: 2400
@@ -387,14 +387,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72da7fcc71db4b750800000000000000
-      internalID: 6319884087028329767
+      spriteID: acf7d68d1ccb84480800000000000000
+      internalID: -8914667921634132022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: heaven_pallet resized_10
+      name: heaven_pallet_Big_10
       rect:
         serializedVersion: 2
         x: 0
@@ -414,14 +414,14 @@ TextureImporter:
         - {x: 300, y: 300}
       tessellationDetail: 0
       bones: []
-      spriteID: 6f9a8296c76892db0800000000000000
-      internalID: -4816170457597695498
+      spriteID: 9a4a6d88b8b4c0da0800000000000000
+      internalID: -5977319542759185239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: heaven_pallet resized_11
+      name: heaven_pallet_Big_11
       rect:
         serializedVersion: 2
         x: 600
@@ -435,14 +435,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4c6b680e4104d700800000000000000
-      internalID: 564077287988489292
+      spriteID: a5c79e6e7c727bf80800000000000000
+      internalID: -8090954466021770150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: heaven_pallet resized_12
+      name: heaven_pallet_Big_12
       rect:
         serializedVersion: 2
         x: 1200
@@ -460,14 +460,14 @@ TextureImporter:
         - {x: 300, y: 300}
       tessellationDetail: 0
       bones: []
-      spriteID: d34ebae0290221050800000000000000
-      internalID: 5769709884298486845
+      spriteID: d2549cd18cdfbe570800000000000000
+      internalID: 8497164157899588909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: heaven_pallet resized_13
+      name: heaven_pallet_Big_13
       rect:
         serializedVersion: 2
         x: 1800
@@ -481,14 +481,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66bd4bbd92c258dd0800000000000000
-      internalID: -2484531061133616282
+      spriteID: dd743b287fa4e7bb0800000000000000
+      internalID: -4936425714641319971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: heaven_pallet resized_14
+      name: heaven_pallet_Big_14
       rect:
         serializedVersion: 2
         x: 2400
@@ -508,8 +508,8 @@ TextureImporter:
         - {x: 131.05081, y: 300}
       tessellationDetail: 0
       bones: []
-      spriteID: 76b1d48850b2314b0800000000000000
-      internalID: -5470981819563435161
+      spriteID: 970215c38caa9f1f0800000000000000
+      internalID: -1010588864385834887
       vertices: []
       indices: 
       edges: []
