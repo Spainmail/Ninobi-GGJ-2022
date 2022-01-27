@@ -285,7 +285,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.85, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &255973869
 GameObject:
@@ -1254,7 +1254,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.85, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &8837174994729366152
 GameObject:
@@ -1733,6 +1733,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8837174996021605364}
   - component: {fileID: 8837174996021605371}
+  - component: {fileID: 8837174994345696958}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Player
@@ -1795,3 +1796,23 @@ MonoBehaviour:
   gravity: -9.81
   gravityScale: 2
   velocity: 0
+--- !u!114 &8837174994345696958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8837174996021605370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8b19783af3c8c048b0473ac8a5271da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHeaven: {fileID: 0}
+  playerHell: {fileID: 0}
+  latestCheckpointHeaven: {fileID: 0}
+  latestCheckpointHell: {fileID: 0}
+  explodeVFXHeaven: {fileID: 0}
+  explodeVFXHell: {fileID: 0}
+  teleportationParticlesHeaven: {fileID: 0}
+  teleportationParticlesHell: {fileID: 0}
