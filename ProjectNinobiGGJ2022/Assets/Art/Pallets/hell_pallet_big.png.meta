@@ -184,7 +184,7 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -300, y: 137}
+      - - {x: -300, y: 194}
         - {x: -129, y: -300}
         - {x: 300, y: -299.61377}
         - {x: 300, y: 192}
@@ -276,7 +276,7 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 300, y: 115}
+      - - {x: 300, y: 198}
         - {x: -300, y: 199}
         - {x: -299.94138, y: -299.61377}
         - {x: 84, y: -300}
