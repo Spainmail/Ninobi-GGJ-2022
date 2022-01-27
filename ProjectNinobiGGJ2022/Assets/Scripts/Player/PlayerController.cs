@@ -58,28 +58,22 @@ public class PlayerController : MonoBehaviour
 
             ApplyDefaultGravity();
 
+            if (!HorizontalCollisionCheck(false))
+            {
+                if (!HorizontalCollisionCheck(true))
+                {
+                    if (isJumping && velocity < 0)
+                    {
+                        movementInput = Input.GetAxisRaw("Horizontal") * inAirControl;
+                    }
+                    else
+                    {
+                        movementInput = Input.GetAxisRaw("Horizontal"); //Get player input
+                    }
+                }
+            }
+
             VerticalCollisionCheck();
-        }
-
-
-        if (isJumping && velocity < 0)
-        {
-            movementInput = Input.GetAxisRaw("Horizontal") * inAirControl;
-        }
-        else
-        {
-            movementInput = Input.GetAxisRaw("Horizontal"); //Get player input
-        }
-
-        if (!disableCollision)
-        {
-            HorizontalCollisionCheck();
-        }
-
-        if (!disableMovement) //Translate horizontal input into movement, unless player input should be disabled.
-        {
-            characterHeaven.transform.Translate(new Vector3(movementInput, 0, 0) * movementSpeed * Time.deltaTime);
-            characterHell.transform.Translate(new Vector3(movementInput, 0, 0) * movementSpeed * Time.deltaTime);
         }
 
         if (Input.GetButtonDown("Jump") && !disableJump && isJumping == false && coyoteTimerCurrent > 0f) //If player is able to and wants to jump.
@@ -106,28 +100,55 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void HorizontalCollisionCheck()
+    private void FixedUpdate()
     {
-        if (Physics2D.BoxCast(characterHeaven.transform.position, new Vector2(1.05f, 1.85f), 0f, characterHeaven.transform.right, 0.06f, groundLayers)
-            ||
-            Physics2D.BoxCast(characterHell.transform.position, new Vector2(1.05f, 1.85f), 0f, characterHell.transform.right, 0.06f, groundLayers))
+        if (!disableMovement) //Translate horizontal input into movement, unless player input should be disabled.
         {
-            //Debug.Log("Hit collider to the right");
-            if (movementInput > 0)
-            {
-                movementInput = -0.06f;
-            }
+            characterHeaven.transform.Translate(new Vector3(movementInput, 0, 0) * movementSpeed * Time.deltaTime);
+            characterHell.transform.Translate(new Vector3(movementInput, 0, 0) * movementSpeed * Time.deltaTime);
         }
-        if (Physics2D.BoxCast(characterHeaven.transform.position, new Vector2(1.05f, 1.85f), 0f, -characterHeaven.transform.right, 0.06f, groundLayers)
+    }
+
+    private bool HorizontalCollisionCheck(bool right)
+    {
+        if (right == true) //Check right side of players.
+        {
+            if (Physics2D.BoxCast(characterHeaven.transform.position, new Vector2(1.32f, 1.9f), 0f, characterHeaven.transform.right, 0.2f, groundLayers)
                 ||
-                Physics2D.BoxCast(characterHell.transform.position, new Vector2(1.05f, 1.85f), 0f, -characterHell.transform.right, 0.06f, groundLayers))
-        {
-            //Debug.Log("Hit collider to the left");
-            if (movementInput < 0)
+                Physics2D.BoxCast(characterHell.transform.position, new Vector2(1.32f, 1.9f), 0f, characterHell.transform.right, 0.2f, groundLayers))
             {
-                movementInput = 0.06f;
+                //Debug.Log("Hit collider to the right");
+                movementInput = 0;    
+                movementInput = -0.2f;
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
+        else
+        {
+            if (Physics2D.BoxCast(characterHeaven.transform.position, new Vector2(1.12f, 1.85f), 0f, -characterHeaven.transform.right, 0.2f, groundLayers)
+                ||
+                Physics2D.BoxCast(characterHell.transform.position, new Vector2(1.12f, 1.85f), 0f, -characterHell.transform.right, 0.2f, groundLayers))
+            {
+                //Debug.Log("Hit collider to the left");
+                movementInput = 0;
+                movementInput = 0.2f;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        //Gizmos.color = Color.red;
+        //Gizmos.DrawCube(characterHeaven.transform.position, new Vector3(1.1f, 1.85f, 1));
     }
 
     private void VerticalCollisionCheck()
