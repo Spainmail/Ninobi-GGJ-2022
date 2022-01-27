@@ -7,14 +7,13 @@ public class Killbox : MonoBehaviour
 {
 
     private GameObject[] players;
-    private string currentScene;
-
+    private PlayerController playerController;
 
     // Start is called before the first frame update
     void Start()
     {
         players = GameObject.FindGameObjectsWithTag("Player");
-        currentScene = SceneManager.GetActiveScene().name;
+        playerController = FindObjectOfType<PlayerController>();
     }
 
     // Update is called once per frame
@@ -28,8 +27,8 @@ public class Killbox : MonoBehaviour
         {
             for(int i = 0; i < players.Length; i++)
             {
-                Destroy(players[i].gameObject);
-                SceneManager.LoadScene(currentScene);
+                Destroy(this.gameObject);
+                playerController.DisableInput(true, true, true);
             }
         }
     }
