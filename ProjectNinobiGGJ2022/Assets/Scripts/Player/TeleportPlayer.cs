@@ -65,11 +65,8 @@ public class TeleportPlayer : MonoBehaviour
     {
         if (teleporting == true)
         {
-            if (playerHeaven.transform.position == latestCheckpointHeaven.transform.position || playerHell.transform.position == latestCheckpointHell.transform.position)
+            if (playerHeaven.transform.position == latestCheckpointHeaven.transform.position || playerHell.transform.position == latestCheckpointHell.transform.position) //Stop lerping and reinstate player + input.
             {
-                Debug.Log("Arrived at teleportation target.");
-                //Stop lerping and reinstate player + input.
-
                 Destroy(originPointHeaven); //Destroy instantiated objects.
                 Destroy(originPointHell);
 
