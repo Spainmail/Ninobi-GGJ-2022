@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 575e633628f59314891f6c432ae11cbc
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 130
+  forceTextureCase: -1
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Lusitana
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1566d33ecc543934ca2ac7a66634a5b5, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

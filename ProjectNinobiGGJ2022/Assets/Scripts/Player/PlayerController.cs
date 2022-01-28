@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D heavenRB;
     public GameObject characterHell;
     public Rigidbody2D hellRB;
+    private string startScene = "StartScene";
 
     public TeleportPlayer teleportation;
 
@@ -56,6 +58,11 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetButtonDown("Cancel"))
+        {
+            SceneManager.LoadScene(startScene);
+        }
+        
         //grounded check.
         if (!disableCollision)
         {

@@ -21,8 +21,8 @@ public class TeleportPlayer : MonoBehaviour
 
     public ParticleSystem explodeVFXHeaven;
     public ParticleSystem explodeVFXHell;
-    public GameObject teleportationParticlesHeaven;
-    public GameObject teleportationParticlesHell;
+    public ParticleSystem restoreVFXHeaven;
+    public ParticleSystem restoreVFXHell;
 
     private void Awake()
     {
@@ -51,11 +51,8 @@ public class TeleportPlayer : MonoBehaviour
         playerHeaven.GetComponent<SpriteRenderer>().enabled = false; //Turn off player sprite.
         playerHell.GetComponent<SpriteRenderer>().enabled = false; //Turn off player sprite.
 
-        //Instantiate(explodeVFXHeaven, playerHeaven.transform.position, Quaternion.identity); //Instantiate explosion effect.
-        //Instantiate(explodeVFXHell, playerHell.transform.position, Quaternion.identity); //Instantiate explosion effect.
-
-        //teleportationParticlesHeaven.SetActive(true);
-        //teleportationParticlesHell.SetActive(true);
+        Instantiate(explodeVFXHeaven, playerHeaven.transform.position, Quaternion.identity); //Instantiate explosion effect.
+        Instantiate(explodeVFXHell, playerHell.transform.position, Quaternion.identity); //Instantiate explosion effect.
 
         teleportationProgressCurrent = 0;
         teleporting = true;
@@ -67,6 +64,9 @@ public class TeleportPlayer : MonoBehaviour
         {
             if (playerHeaven.transform.position == latestCheckpointHeaven.transform.position || playerHell.transform.position == latestCheckpointHell.transform.position) //Stop lerping and reinstate player + input.
             {
+                Instantiate(restoreVFXHeaven, playerHeaven.transform.position, Quaternion.identity); //Instantiate explosion effect.
+                Instantiate(restoreVFXHell, playerHell.transform.position, Quaternion.identity); //Instantiate explosion effect.
+
                 Destroy(originPointHeaven); //Destroy instantiated objects.
                 Destroy(originPointHell);
 

@@ -2097,7 +2097,7 @@ MonoBehaviour:
   originPointPrefab: {fileID: 5562604177159200252, guid: f852618ee3d5517428ad38bb2c11dd1c, type: 3}
   latestCheckpointHeaven: {fileID: 0}
   latestCheckpointHell: {fileID: 0}
-  explodeVFXHeaven: {fileID: 0}
-  explodeVFXHell: {fileID: 0}
-  teleportationParticlesHeaven: {fileID: 0}
-  teleportationParticlesHell: {fileID: 0}
+  explodeVFXHeaven: {fileID: 6121728916926550056, guid: d5a7f37ea3a491d4c96e7de2cc4b3287, type: 3}
+  explodeVFXHell: {fileID: 3821820123637523230, guid: f649d9a0426355242953fdfc7c5963b6, type: 3}
+  restoreVFXHeaven: {fileID: 4885079040839010997, guid: 69eb001eb0726bb429598812bf7d87e9, type: 3}
+  restoreVFXHell: {fileID: 7295895872801612641, guid: 3e4bd6513cd94be44873d406486a259b, type: 3}
