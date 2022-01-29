@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D heavenRB;
     public GameObject characterHell;
     public Rigidbody2D hellRB;
-    private string startScene = "StartScene";
+    private string startScene = "StartScreen";
 
     public TeleportPlayer teleportation;
 
