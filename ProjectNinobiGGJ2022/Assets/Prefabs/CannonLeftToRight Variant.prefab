@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6414597211470990822, guid: 46434aa28e68ca44aa1e4eb5a2341a8d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3915ccb91f2db7b489428e4ce5789437, type: 3}
     - target: {fileID: 6414597211470990823, guid: 46434aa28e68ca44aa1e4eb5a2341a8d, type: 3}
       propertyPath: m_Name
       value: CannonLeftToRight Variant
