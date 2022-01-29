@@ -47,3 +47,6 @@ TagManager:
   - name: forground
     uniqueID: 2731896871
     locked: 0
+  - name: closer forground
+    uniqueID: 1208209953
+    locked: 0
