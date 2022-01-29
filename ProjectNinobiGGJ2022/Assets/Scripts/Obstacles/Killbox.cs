@@ -27,7 +27,7 @@ public class Killbox : MonoBehaviour
         {
             for(int i = 0; i < players.Length; i++)
             {
-                Destroy(this.gameObject);
+                //Destroy(this.gameObject);
                 playerController.DisableInput(true, true, true);
             }
         }
