@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Quit"))
         {
             SceneManager.LoadScene(startScene);
         }
@@ -106,10 +106,10 @@ public class PlayerController : MonoBehaviour
             characterHell.transform.Translate(new Vector3(0, velocity, 0) * Time.deltaTime);
         }
 
-        if (Input.GetKeyUp(KeyCode.T)) //Teleport debug
-        {
-            DisableInput(true, true, true);
-        }
+        //if (Input.GetKeyUp(KeyCode.T)) //Teleport debug
+        //{
+        //    DisableInput(true, true, true);
+        //}
     }
 
     private void FixedUpdate()

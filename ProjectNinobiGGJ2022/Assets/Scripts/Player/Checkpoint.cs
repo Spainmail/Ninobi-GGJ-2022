@@ -26,4 +26,10 @@ public class Checkpoint : MonoBehaviour
             }
         }
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawCube(transform.position, new Vector3(1, 10, 1));
+    }
 }
