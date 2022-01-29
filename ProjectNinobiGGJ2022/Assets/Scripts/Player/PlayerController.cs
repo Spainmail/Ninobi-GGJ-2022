@@ -48,6 +48,13 @@ public class PlayerController : MonoBehaviour
     public Animator AnimatorHeaven;
     public Animator AnimatorHell;
 
+    [Header("Sound")]
+    [SerializeField] private AudioClip[] HeavenWalk;
+    [SerializeField] private AudioClip[] JumpSounds;
+    [SerializeField] private AudioClip[] HellWalk;
+    public AudioSource audioSourceHeaven;
+    public AudioSource audioSourceHell;
+
 
     private void Awake()
     {
@@ -86,10 +93,19 @@ public class PlayerController : MonoBehaviour
             }
 
             VerticalCollisionCheck();
+
+            if(hellGrounded == false && heavenGrounded == false && isJumping == false)
+            {
+                AnimatorHeaven.SetBool("IsFalling", true);
+                AnimatorHell.SetBool("IsFalling", true);
+            }
         }
 
         if (Input.GetButtonDown("Jump") && !disableJump && isJumping == false && coyoteTimerCurrent > 0f) //If player is able to and wants to jump.
         {
+            AnimatorHeaven.SetBool("IsJumping", true);
+            JumpSound();
+            AnimatorHell.SetBool("IsJumping", true);
             coyoteTimerCurrent = 0f;
             isJumping = true;
             Jump();
@@ -215,6 +231,10 @@ public class PlayerController : MonoBehaviour
     {
         if (Physics2D.Raycast(characterHeaven.transform.position, -Vector2.up, groundRay, groundLayers) || Physics2D.Raycast(characterHell.transform.position, -Vector2.up, groundRay, groundLayers))
         {
+            AnimatorHeaven.SetBool("IsJumping", false);
+            AnimatorHell.SetBool("IsJumping", false);
+            AnimatorHeaven.SetBool("IsFalling", false);
+            AnimatorHell.SetBool("IsFalling", false);
             heavenGrounded = true;
             hellGrounded = true;
             if (isJumping)
@@ -233,7 +253,6 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
     public void Jump()
     {
         velocity = jumpForce;
@@ -262,5 +281,33 @@ public class PlayerController : MonoBehaviour
             disableMovement = false;
             disableCollision = false;
         }
+    }
+    public void stepHeaven()
+    {
+        AudioClip clipHeaven = GetRandomClipHeaven();
+        audioSourceHeaven.PlayOneShot(clipHeaven);
+    }
+    private AudioClip GetRandomClipHeaven()
+    {
+        return HeavenWalk[UnityEngine.Random.Range(0, HeavenWalk.Length)];
+    }
+    public void stepHell()
+    {
+        AudioClip clipHell = GetRandomClipHell();
+        audioSourceHell.PlayOneShot(clipHell);
+    }
+    private AudioClip GetRandomClipHell()
+    {
+        return HellWalk[UnityEngine.Random.Range(0, HellWalk.Length)];
+    }
+
+    public void JumpSound()
+    {
+        AudioClip clipJump = GetRandomClipJump();
+        audioSourceHeaven.PlayOneShot(clipJump);
+    }
+    private AudioClip GetRandomClipJump()
+    {
+        return JumpSounds[UnityEngine.Random.Range(0, JumpSounds.Length)];
     }
 }
