@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4705671442721750690}
   - component: {fileID: 4705671442721750689}
   - component: {fileID: 4705671442721750688}
+  - component: {fileID: 4124810658628255491}
   m_Layer: 6
   m_Name: MovableBox
   m_TagString: Pushable
@@ -131,3 +132,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &4124810658628255491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4705671442721750703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 319ec3ffc0b051a44807a9283aef3347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newLoc: {fileID: 0}
+  timer: 0
+  cooldownTimer: 5
