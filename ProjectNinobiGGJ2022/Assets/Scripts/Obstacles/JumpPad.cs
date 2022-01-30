@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class JumpPad : MonoBehaviour
 {
+
+    [SerializeField] private AudioClip[] Boink;
+    public AudioSource audioBoink;
     PlayerController playerC;
     Rigidbody2D playerB;
     public float upwardVelocity;
@@ -26,6 +29,16 @@ public class JumpPad : MonoBehaviour
             playerB = Col.gameObject.GetComponent<Rigidbody2D>();
             playerC = Col.gameObject.GetComponentInParent<PlayerController>();
             playerC.velocity = upwardVelocity;
+            BoinkSound();
         }
+    }
+    public void BoinkSound()
+    {
+        AudioClip clipBoink = GetRandomClipBoink();
+        audioBoink.PlayOneShot(clipBoink);
+    }
+    private AudioClip GetRandomClipBoink()
+    {
+        return Boink[UnityEngine.Random.Range(0, Boink.Length)];
     }
 }

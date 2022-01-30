@@ -23,7 +23,7 @@ public class Killbox : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D Col)
     {
-        if (Col.CompareTag("Player"))
+        if (Col.CompareTag("Player") && !Col.CompareTag("EditorOnly"))
         {
             for(int i = 0; i < players.Length; i++)
             {

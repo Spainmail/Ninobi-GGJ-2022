@@ -98,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootTimer: 1
   bulletSpeed: -500
+  bulletSpeedY: 0
   bullet: {fileID: 1741242855105920044, guid: 6a2b131fc1868884084e5f590138f364, type: 3}
   bulletSpawnPoint: {fileID: 6414597212597588022}
 --- !u!1 &6414597212597588022
@@ -124,7 +125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6414597212597588022}
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: -0.1, y: 0.04, z: 0}
+  m_LocalPosition: {x: -2.96, y: 0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6414597211470990821}

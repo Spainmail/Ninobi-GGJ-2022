@@ -7,6 +7,7 @@ public class Cannon : MonoBehaviour
     private float timer = 0f;
     public float shootTimer = 2f;
     public float bulletSpeed = -500;
+    public float bulletSpeedY = 0;
     public GameObject bullet;
     public GameObject bulletSpawnPoint;
     private GameObject bulletInstance;
@@ -25,7 +26,7 @@ public class Cannon : MonoBehaviour
         {
             timer = 0;
             bulletInstance = Instantiate(bullet, bulletSpawnPoint.transform.position, bulletSpawnPoint.transform.rotation);
-            bulletInstance.GetComponent<Rigidbody2D>().AddForce(new Vector2(bulletSpeed, 0));
+            bulletInstance.GetComponent<Rigidbody2D>().AddForce(new Vector2(bulletSpeed, bulletSpeedY));
         }
 
     }

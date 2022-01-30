@@ -14,7 +14,6 @@ public class ParralaxBackground : MonoBehaviour
     {
         cameraTransform = Camera.main.transform;                    //Setting the camera transform to be the camera transform
         lastCameraPosition = cameraTransform.position;              //Putting the camera position on the 'last camera position' so that it can be used in the update part of the script
-        Sprite sprite = GetComponent<SpriteRenderer>().sprite;      //Get the sprite renderer component
     }
 
     private void LateUpdate()
