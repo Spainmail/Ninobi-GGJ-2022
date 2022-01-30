@@ -70,6 +70,11 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene(startScene);
         }
         
+        if (Input.GetButtonDown("r"))
+        {
+            DisableInput(true, true, true);
+        }
+        
         //grounded check.
         if (!disableCollision)
         {
